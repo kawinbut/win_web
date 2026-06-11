@@ -22,8 +22,8 @@ body {
 }
 
 .navbar {
-  background: #0f172a;
-  color: white;
+  background: #00ffff;
+  color: 000000;
   padding: 14px 24px;
 }
 
@@ -52,12 +52,13 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #ffff00;
+  font-weight: bold;
 }
 
 .btn-register {
@@ -137,10 +138,15 @@ body {
 }
 
 .footer {
-  background: #0f172a;
+  background: #808080;
   color: white;
   text-align: center;
   padding: 18px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
