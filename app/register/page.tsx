@@ -22,7 +22,7 @@ export default function Register() {
     });
 
     if (res.ok) {
-      alert("Register successfull");
+      alert("Register successful");
       router.push("/login");
     } else {
       alert("Register failed");
@@ -33,7 +33,7 @@ export default function Register() {
   return (
 
     <div className="auth-page">
-      <form className="auth-card"  onSubmit={handleSubmit}>
+      <form className="auth-card" onSubmit={handleSubmit}>
         <h2> สมัครสมาชิก </h2>
         <input
           placeholder="Name"
