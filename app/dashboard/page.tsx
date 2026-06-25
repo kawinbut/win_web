@@ -1,10 +1,24 @@
-import Image from "next/image";
+import { redirect } from "next/navigation"
+import { getSession } from "@/lib/session";
 
-export default function Home() {
+export default async function Dashboard() {
+
+  const user = await getSession ();
+
+  if (!user) {
+    redirect("/login");
+  }
+
+
   return (
     <div>
-        <h1>こんにちは</h1>
-        <p>By kawinbut Marattanapairoj</p>
+
+    <h2> Dashboard</h2>
+    <p>Wellcome: {user.name as string} </p>
+    <p>Role: {user.name as string} </p>
+
     </div>
+
   );
+
 }
